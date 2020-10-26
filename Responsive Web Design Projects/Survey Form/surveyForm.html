@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="surveyForm.css">
+</head>
+<body>
+	<div class="container">
+	  <header class="header">
+	    <h1 id="title" class="text-center">¿Cuánto conoces sobre Hogwarts?</h1>
+	    <p id="description" class="description text-center">
+	      ¿Te consideras un gran fan del mundo mágico de Harry Potter? ¡Pon a prueba tus conocimientos con este test sobre Hogwarts!
+	    </p>
+	  </header>
+
+	  <form id="survey-form">
+	    <div class="form-group">
+	      <label id="name-label" for="name">Nombre</label>
+	      <input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu nombre" required/>
+	    </div>
+
+	    <div class="form-group">
+	      <label id="email-label" for="email">Email</label>
+	      <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu email" required/>
+	    </div>
+
+	    <div class="form-group">
+	      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+	      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad"/>
+	    </div>
+	    
+	    <h2>¡Empecemos con las preguntas!</h2>
+	    
+	    <div class="form-group">
+	      <p>¿Donde está ubicado Hogwarts?</p>
+	      <label>
+	        <input name="user-recommend" value="Irlanda" type="radio" class="input-radio"/>Irlanda</label>
+	      <label>
+	        <input name="user-recommend" value="Bulgaria" type="radio" class="input-radio"/>Bulgaria</label>
+	      <label>
+	        <input name="user-recommend" value="Escocia" type="radio" class="input-radio"/>Escocia</label>
+	      <label>
+	      <input name="user-recommend" value="Estados Unidos" type="radio" class="input-radio"/>Estados Unidos</label>
+	    </div>
+
+	    <div class="form-group">
+	      <p>¿Donde se celebra la ceremonia de selección en Hogwarts?
+	      <span class="clue"></span></p>
+	      <select id="dropdown" name="role" class="form-control"required>
+	        <option disabled selected value>Elige un lugar</option>
+	        <option value="La cámara secreta">La cámara secreta</option>
+	        <option value="Hogsmeade">Hogsmeade</option>
+	        <option value="El Gran Comedor">El Gran Comedor</option>
+	        <option value="Sala de los Menesteres">Sala de los Menesteres</option>
+	        <option value="Las mazmorras">Las mazmorras</option>
+	      </select>
+	    </div>
+
+	    <div class="form-group">
+	      <p>¿Cual es el deporte favorito de los estudiantes de Hogwarts?</p>
+	      <select id="most-like" name="mostLike" class="form-control" required>
+	        <option disabled selected value>Elige un deporte</option>
+	        <option value="creaothceann">Creaothceann</option>
+	        <option value="swivenhodge">Swivenhodge</option>
+	        <option value="ajedrez mágico">Ajedrez mágico</option>
+	        <option value="quidditch">Quidditch</option>
+	      </select>
+	    </div>
+
+	   <div class="form-group">
+	    <p>¿Cuales de las siguientes opciones no pertenece al sistema de casas de Hogwarts?
+	    <span class="clue">(Elige tantas opciones como desees)</span></p>
+	      <label>
+	        <input name="prefer" value="Wampus" type="checkbox" class="input-checkbox">Wampus</label>
+	      <label>
+	        <input name="prefer" value="Gryffindor" type="checkbox" class="input-checkbox"/>Gryffindor</label>
+	      <label>
+	        <input name="prefer" value="Pukwudgie" type="checkbox" class="input-checkbox"/>Pukwudgie</label>
+	      <label>
+	        <input name="prefer" value="Hufflepuff" type="checkbox" class="input-checkbox"/>Hufflepuff</label>
+	      <label>
+	        <input name="prefer" value="Durmstrang" type="checkbox" class="input-checkbox"/>Durmstrang</label>
+	      <label>
+	        <input name="prefer" value="Perenelle" type="checkbox" class="input-checkbox"/>Perenelle</label>
+	    </div>
+
+	   <div class="form-group">
+	      <p>¿Cual de los siguientes personajes no fue director de Hogwarts?
+	      <span class="clue"></span></p>
+	      <select id="dropdown" name="role" class="form-control"required>
+	        <option disabled selected value>Elige un lugar</option>
+	        <option value="Albus Dumbledore">Albus Dumbledore</option>
+	        <option value="Severus Snape">Severus Snape</option>
+	        <option value="Phineas Nigellus Black">Phineas Nigellus Black</option>
+	        <option value="Nicolas Flamel">Nicolas Flamel</option>
+	        <option value="Minerva McGonagall">Minerva McGonagall</option>
+	      </select>
+	    </div>
+
+	   <div class="form-group">
+	      <p>¿Que motivó la fundación de Hogwarts?</p>
+	      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+	   </div>
+
+	   <div class="form-group">
+	      <button type="submit" id="submit" class="submit-button">
+	        Submit
+	      </button>
+	   </div>
+	  </form>
+	</div>
+</body>
+</html>

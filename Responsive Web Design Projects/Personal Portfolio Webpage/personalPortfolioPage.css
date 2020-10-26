@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Grandstander:wght@500;600&display=swap');
+
+/*Font*/
+:root{
+  --main-font: 'Acme', sans-serif;
+  --second-font:'Grandstander', cursive;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base styles */
+body {
+  font-family: var(--main-font);
+  line-height: 1.4;
+}
+
+.max-width {
+	max-width: 1400px;
+	padding: 0 80px;
+	margin: auto;
+}
+
+/*navbar*/
+.nav { 
+  position: fixed;
+	width: 100%;
+	z-index: 999;
+	background: #111;
+	font-family: var(--second-font);
+	box-shadow: 0 2px 0 rgb(117,105,95);
+}
+
+.nav .max-width {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 2.2rem;
+  padding: 1.8rem;
+}
+
+.nav-list a:hover {
+  color: #B53471;
+}
+
+/*welcome-section*/
+.welcome-section {
+  display: flex;
+	background: linear-gradient( -40deg, #34e7e4, #ef5777);
+	height: 100vh;
+  width: 100%;
+	color: #111;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 500px;
+	font-family: var(--main-font);
+}
+
+.welcome-section .max-width {
+	text-align: center;
+}
+
+.welcome-section h1 {
+  font-family: var(--main-font);
+  font-size: 6rem;
+  margin-bottom: 1rem; 
+}
+
+.welcome-section p {
+  font-size: 4rem;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: .5rem;
+}
+
+.welcome-section span{
+  color: #B53471;
+}
+
+/*Section*/
+section {
+	padding: 100px 0;
+}
+
+section .tile {
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 40px;
+	font-family: var(--fuentemain);
+}
+
+section .icon {
+  font-size: 30px;
+  color: #B53471;
+}
+
+/*about*/
+.about, .projects-section{
+	font-family: var(--main-font);
+  color: #111;
+}
+
+.about .about-content, .projects-section {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about .about-content .left {
+	width: 45%;
+}
+
+.about .about-content .left img {
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+
+.about .about-content .right {
+	width: 55%;
+}
+
+.about .about-content .right .text {
+	font-size: 2.3rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+	color: #B53471;
+}
+
+.about .about-content .right p {
+	text-align: justify;
+  font-size: 1.6rem;
+}
+
+
+/*projects*/
+.projects-section {
+	color: #fff;
+	background: #111;
+  text-align: center;
+}
+
+.serv-content {
+  display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.project:hover .code {
+  color: #34e7e4;
+  transition: color 0.3s ease-out;
+}
+
+.project-image {
+  height: calc(100% - 6rem);
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  padding: 1rem 0.5rem;
+  color: #B53471;
+}
+
+/*Articles*/
+.articles-sec{
+  background-color: #fff;
+}
+
+.article{
+  color: #111;
+}
+
+.projects-grid a {
+  text-decoration: none;
+}
+
+.project-image-a{
+  box-shadow: 0 3px 6px #b2bec3, 0 3px 6px #b2bec3;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  width: 100%;
+}
+
+.project-image-a:hover {
+  transform: translateX(.8rem);
+}
+
+/* Contact section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  background-color: #111;
+}
+
+.contact-tile{
+  color: #fff;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-details {
+  font-size: 3rem;
+  transition: transform 0.4s ease-out;
+  color: #B53471;
+  padding: .8rem;
+}
+
+.contact-details:hover {
+  transform: translateY(10px);
+}
+
+/* Footer */
+footer {
+	padding: 10px auto;
+	color: #111;
+	text-align: center;
+  background-color: #fff;
+  font-size: 1.5rem;
+}
+
+footer p a{
+	color: #B53471;
+  text-decoration: none;
+	
+}
+
+footer p a:hover {
+	text-decoration: underline;
+}
+
+/*Responsive Media Query*/
+@media (max-width: 1400px) {
+.nav-list a {
+  font-size: 1.4rem;
+}
+
+.welcome-section h1 {
+  font-size: 4rem;
+}
+
+.welcome-section p {
+  font-size: 3rem;
+}
+
+.about .about-content .left img {
+  height: 400px;
+  width: 480px;
+}
+
+.about .about-content .right .text {
+  font-size: 2rem;
+}
+
+.about .about-content .right p {
+  font-size: 1.5rem;
+}
+}
+
+@media (max-width: 1280px) {
+.about .about-content{
+    width: 100%;
+}
+
+.about .about-content .left img {
+  height: 390px;
+  width: 400px;
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 2rem;
+}
+
+.about .about-content .right p {
+  font-size: 1.4rem;
+}
+}
+
+@media (max-width: 1160px){
+.about .about-content .left img {
+  height: 300px;
+  width: 350px;
+}
+
+.about .about-content .right .text {
+  font-size: 1.7rem;
+}
+
+.about .about-content .right p {
+  font-size: 1.4rem;
+}
+
+.project-title {
+  font-size: 1.6rem;
+}
+}
+
+@media (max-width: 1040px) {
+.welcome-section h1 {
+  font-size: 3.5rem;
+}
+
+.about .about-content .left img {
+  height: 280px;
+  width: 330px;
+}
+
+.about .about-content .right .text {
+  font-size: 1.6rem;
+}
+
+.about .about-content .right p {
+  font-size: 1.3rem;
+}
+}
+
+@media (max-width: 947px){
+.max-width {
+  max-width: 800px; 
+}
+.about .about-content .column{
+  width: 100%;
+}
+
+.about .about-content .left{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 60px;
+}
+
+.about .about-content .right {
+  flex: 100%;
+}
+
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+  grid-gap: 3rem;
+}
+}
+
+@media (max-width: 700px) {
+section .tile {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.nav-list a {
+  font-size: 1rem;
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+}
+
+.welcome-section p {
+  font-size: 2.5rem;
+}
+
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(252px, 1fr));
+  grid-gap: 2rem;
+}
+.contact-section {
+  height: 20vh;
+}
+
+.contact-tile{
+  font-size: 1.5rem;
+}
+
+.contact-details {
+  font-size: 2.5rem;
+  padding: .5rem;
+}
+
+.project-title {
+  font-size: 1.4rem;
+}
+
+footer {
+  padding: 0 auto;
+  font-size: 1.1rem;
+}
+}
+
+@media (max-width: 630px) {
+.welcome-section h1 {
+  font-size: 2.5rem;
+}
+
+.welcome-section p {
+  font-size: 2rem;
+}
+}
+
+@media (max-width: 570px) {
+.welcome-section {
+  height: 80vh;
+}
+
+section .tile {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+section .icon {
+  font-size: 20px;
+}
+
+.nav-list a {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.contact-details {
+  font-size: 2rem;
+}
+}
+
+@media (max-width: 545px) {
+.welcome-section h1 {
+  font-size: 2.3rem;
+}
+
+.welcome-section p {
+  font-size: 1.8rem;
+}
+
+footer {
+  font-size: 1rem;
+}
+}
+
+@media (max-width: 460px) {
+.welcome-section {
+  height: 70vh;
+}
+
+section .tile {
+  font-size: 28px;
+  margin-bottom: 22px;
+}
+
+section .icon {
+  font-size: 18px;
+}
+
+.nav-list a {
+  font-size: .8rem;
+  padding: 1rem;
+}
+
+.about .about-content .right .text {
+  font-size: 1.4rem;
+}
+
+.about .about-content .right p {
+  font-size: 1.1rem;
+}
+
+footer {
+  font-size: .8rem;
+}
+}
+
+@media (max-width: 410px) {
+.welcome-section {
+  width: calc(100% + 15px);
+  height: 55vh;
+}
+
+.welcome-section h1 {
+  font-size: 2rem;
+}
+
+.welcome-section p {
+  font-size: 1.3rem;
+}
+
+.contact-tile{
+  font-size: 1.3rem;
+}
+
+footer {
+  font-size: .78rem;
+}
+}
+
+@media (max-width: 380px) {
+.welcome-section, .about, .projects-section, .contact-section {
+  width: calc(100% + 35px);
+}
+
+.about .about-content .left img {
+  height: 200px;
+  width: 260px;
+}
+
+.about .about-content .left {
+  width: 35%;
+}
+
+.about .about-content .right {
+  width: 65%;
+}
+
+.about .about-content .right .text {
+  font-size: 1.5rem;
+}
+
+.about .about-content .right p {
+  font-size: 1.3rem;
+}
+
+footer {
+  font-size: .68rem;
+}
+}
+
+@media (max-width: 340px) {
+.max-width {
+  padding: 0 45px;
+}
+
+.welcome-section, .about, .projects-section, .contact-section {
+  width: calc(100% + 72px);
+}
+
+.contact-section .profile-link{
+  margin: auto;
+}
+
+footer {
+  font-size: .67rem;
+}
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Technical Documentation Page</title>
+	<link rel="stylesheet" href="technicalDocumentationPage.css">
+</head>
+<body>
+	<nav id="navbar">
+  		<header><b>Que es el CSS</b></header>
+		  	<ul>
+			    <li>
+			    	<a class="nav-link" href="#Introduccion">Introduccion</a></li>
+			    <li>
+			      <a class="nav-link" href="#¿Que_significa_CSS?">¿Que significa CSS?</a></li>
+			    <li>
+			      <a class="nav-link" href="#¿Que_es_CSS?">¿Que es Css?</a></li>
+			    <li>
+			      <a class="nav-link" href="#Ventajas_de_CSS">Ventajas de CSS</a></li>
+			    <li>
+			      <a class="nav-link" href="#¿Para_que_sirve_CSS?">¿Para que sirve CSS?</a></li>
+			    <li>
+			      <a class="nav-link" href="#¿Cual_es_su_sintaxis?">¿Cual es su Sintaxis?</a></li>
+			    <li>
+			      <a class="nav-link" href="#¿Que_son_los_selectores?">¿Que son los Selectores?</a></li>
+			    <li>
+			      <a class="nav-link" href="#Referencias">Referencias</a></li>
+		    </ul>
+	</nav>
+
+	<main id="main-doc">
+		<section class="main-section" id="Introduccion">
+	    	<header>Introduccion</header>
+	    	<article>
+	      		<p>Para empezar a hablar sobre CSS es primordial mencionar que el mismo se encuentra conectado o relacionado con HTML quien nunca tuvo la intención de contener etiquetas para formatear una página web pues fue creado para describir el contenido de una página web, anteriormente cuando se intentaba agregar etiquetas y atributos de diseño a la especificación HTML, se daba inicio a una pesadilla para los desarrolladores web. El desarrollo de sitios web grandes, donde se agregan fuentes e información de color a cada página, se convierten en un proceso largo y costoso, para resolver este problema, el Consorcio World Wide Web (W3C) creó CSS y asi fue como CSS elimina el formato de estilo de la página HTML.</p>
+	    	</article>
+		</section>
+
+		<section class="main-section" id="¿Que_significa_CSS?">
+	    	<header>¿Que significa CSS?</header>
+	    	<article>
+	      		<p>CSS es una tecnología que ha tenido una evolución en el tiempo, que actualmente se encuentra en su versión 3, como su propio nombre indica. Sus siglas corresponden a “Cascading Style Sheets”, que tiene el siguiente significado:
+	  			<ul>
+	        		<li>
+	          		<b>Cascading</b>, que significa que los estilos que aplicamos a los elementos de una página web se propagan a los elementos que contiene, se propagan en cascada.</li>
+	        		<li>
+	          		<b>Style</b>, porque mediante CSS lo que hacemos es aplicar estilos visuales a los distintos elementos de nuestra página web.</li>
+	        		<li>
+	          		<b>Sheets</b>, que significa hojas, porque los estilos de una página web se añaden en ficheros aparte, en ficheros con la extensión .css de manera general.</li>
+	        	</ul>
+	      		<p>CSS ha ido evolucionando desde hace 25 años a la versión actual, pero su función es la misma, sirve para dar estilos visuales a las páginas web.</p>
+	  		</article>
+		</section>
+
+	   <section class="main-section" id="¿Que_es_CSS?">
+	   		<header>¿Que es Css?</header>
+	    	<article>
+		      <p>CSS es un lenguaje de hojas de estilos creado para controlar el aspecto o presentación de los documentos electrónicos definidos con HTML y XHTML. CSS es la mejor forma de separar los contenidos y su presentación y es imprescindible para crear páginas web complejas.</p>
+		      <p>Separar la definición de los contenidos y la definición de su aspecto presenta numerosas ventajas, ya que obliga a crear documentos HTML/XHTML bien definidos y con significado completo (también llamados "documentos semánticos"). Además, mejora la accesibilidad del documento, reduce la complejidad de su mantenimiento y permite visualizar el mismo documento en infinidad de dispositivos diferentes.</p>
+		      <p>Al crear una página web, se utiliza en primer lugar el lenguaje HTML/XHTML para marcar los contenidos, es decir, para designar la función de cada elemento dentro de la página: párrafo, titular, texto destacado, tabla, lista de elementos, etc.</p>
+		      <p>Una vez creados los contenidos, se utiliza el lenguaje CSS para definir el aspecto de cada elemento: color, tamaño y tipo de letra del texto, separación horizontal y vertical entre elementos, posición de cada elemento dentro de la página entre otros aspectos.</p>
+	    	</article>
+		</section>
+
+	  	<section class="main-section" id="Ventajas_de_CSS">
+	    	<header>Ventajas de CSS</header>
+	    	<article>
+	      		<p>El modo de funcionamiento de las CSS consiste en definir, mediante una sintaxis especial, la forma de presentación que le aplicaremos a los elementos de la página.  Podemos aplicar CSS a muchos niveles, desde un sitio web entero hasta una pequeña etiqueta. Estos son los principales bloques de acción:</p>
+	  			<ul>
+	        		<li>Un web entero, de modo que se puede definir en un único lugar el estilo de toda una web, de una sola vez.</li>
+	        		<li>Un documento HTML o página en particular. Se puede definir la forma de cada uno de los bloques de contenido de una página, en una declaración que afectará a un solo documento de un sitio web.</li>
+	        		<li>Una porción del documento, aplicando estilos visibles en un trozo de la página, como podría ser la cabecera.</li>
+	        		<li>Una etiqueta en concreto, llegando incluso a poder definir varios estilos diferentes para una sola etiqueta. Esto es muy importante ya que ofrece potencia en nuestra programación. Podemos definir, por ejemplo, varios tipos de párrafos: en rojo, en azul, con margenes, sin ellos.</li>
+	        		<li>Podemos definir la distancia entre líneas del documento.</li>
+	        		<li>Se puede aplicar identado (sangrado) a las primeras líneas del párrafo.</li>
+	        		<li>Podemos colocar elementos en la página con mayor precisión, y sin lugar a errores.</li>
+	        		<li>Otra ventaja importante de CSS es la capacidad de espeficiar las medidas con diversas unidades. Si HTML tan sólo podíamos definir atributos en las páginas con pixeles y porcentajes, ahora podemos definir utilizando muchas más unidades como:
+	          	<ul>
+		          <li>Pixels (px) y porcentaje (%).</li>
+		          <li>Pulgadas (in).</li>
+		          <li>Puntos (pt).</li>
+		          <li>Centímetros (cm).</li>
+		      	</ul>
+	        		</li>
+	  			</ul>
+	    	</article>
+		</section>
+
+	  	<section class="main-section" id="¿Para_que_sirve_CSS?">
+	    	<header>¿Para que sirve CSS?</header>
+	    	<article>
+	    		<p>El código CSS hace la vida más fácil al desarrollador front-end al separar las estructura de un documento HTML de su presentación. Dicho de otro modo el HTML actuaría como es esqueleto de la web, definiendo su estructura básica, y el CSS añadiría toda la capa de personalización sobre el que la web define su aspecto final.</p>
+	    		<p>Siguiendo este fundamento resulta muy fácil para un diseñador web realizar cambios en la apariencia de una web sin afectar de manera dramática a su contenido. El contenido siempre será el mismo, solo cambia como aquello que podemos ver. CSS es fácil de entender y aprender, y nos da un potente control de cómo diseñar los documentos HTML.</p>
+	    		<p>Por tanto la principal ventaja del CSS es que al poder ordenar nuestras preferencias de estilo en un único documento independiente ahorramos una considerable cantidad de tiempo al escribir nuestras órdenes CSS en forma de plantilla una única vez para ser aplicado luego a todos las páginas que componen nuestra página web.</p>
+	    	</article>
+		</section>
+
+	  	<section class="main-section" id="¿Cual_es_su_sintaxis?">
+	    	<header>¿Cual es su Sintaxis?</header>
+	    	<article>
+			    <p>Cuando se habla de la sintaxis de Css nos referimos a un conjunto de reglas CSS que constan de un selector y un bloque de declaración: El selector apunta al elemento HTML que desea diseñar, el bloque de declaración contiene una o más declaraciones separadas por punto y coma, debiendo cada declaración incluir un nombre de propiedad CSS y un valor, separados por dos puntos.</p>
+			    <p>Por otra parte las declaraciones CSS múltiples se separan con punto y coma, y los bloques de declaraciones están rodeados por llaves. Un ejemplo de esto lo podemos ver en el siguiente codigo:</p>
+			    <code>
+			      h1 { 
+			      color: blue;
+			      font-size; 12px;
+			      }
+			    </code>
+	    		<p>Otro ejemplo de la sintaxis que se usa en CSS podemos verlo acá:</p>
+			    <code>
+			    p { 
+			    color: green;
+			    text-align: center;
+			    }
+			    </code>
+			    <br />
+			    <p>En este ejemplo, todos los elementos p estarán alineados al centro, con un color de texto verde, la p es un selector en CSS, color es una propiedad y green es el valor de la propiedad.  Asimismo text-align es una propiedad y center es el valor de la propiedad. En resumen CSS se compone de dos partes. Una parte llamada "selector" y otra parte llamada "declaración". La declaración indica "qué hay que hacer" y el selector indica "a quién hay que hacérselo". Por lo tanto, los selectores son imprescindibles para aplicar de forma correcta los estilos CSS en una página.</p>
+	    	</article>
+		</section>
+
+	  	<section class="main-section" id="¿Que_son_los_selectores?">
+	    	<header>¿Que son los Selectores?</header>
+	    	<article>
+		      <p>Para crear diseños web profesionales, es imprescindible conocer y dominar los selectores de CSS. Tal y como se mencionó, una regla de CSS está formada por una parte llamada "selector" y otra parte llamada "declaración".</p>
+		      <p>La declaración indica "qué hay que hacer" y el selector indica "a quién hay que hacérselo". Por lo tanto, los selectores son imprescindibles para aplicar de forma correcta los estilos CSS en una página.</p>
+		      <p>Los selectores CSS se utilizan para "encontrar" (o seleccionar) los elementos HTML que desea diseñar, entre ellos se encuentran:</p>
+	  		  <ul>
+	      		<li><b>Selector universal:</b> Se utiliza para seleccionar todos los elementos de la página y se indica mediante un asterisco (*). No se utiliza habitualmente, ya que es difícil que un mismo estilo se pueda aplicar a todos los elementos de una página. Un ejemplo de este es:</li>
+			    <code>
+			      * { 
+			      margin: 0; 
+			      padding: 0;
+			    }
+			    </code>
+			    <br />
+			    <li><b>Selector de tipo o etiqueta:</b> Selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del selector. El siguiente ejemplo selecciona todos los párrafos de la página. El siguiente ejemplo aplica diferentes estilos a los titulares y a los párrafos de una página HTML:</li>
+			    <code>
+			      h1 {
+			      color: red;
+			    }
+			    </code><br/>
+			    <code>
+			      p {
+			      color: black;
+			    }
+			    </code><br />
+			    <li><b>Selector descendente:</b> Los selectores descendentes permiten aumentar la precisión del selector de tipo o etiqueta. Selecciona los elementos que se encuentran dentro de otros elementos.  Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del otro elemento. El selector del siguiente ejemplo selecciona todos los elementos <span> de la página que se encuentren dentro de un elemento p:</li>
+			    <code>
+	        	  p span { 
+	        	  color: red; 
+	      		}
+	      		</code>
+	      		<br />
+	    		<p>El motivo es que en el selector descendente, un elemento no tiene que ser descendiente directo del otro. La única condición es que un elemento debe estar dentro de otro elemento, sin importar el nivel de profundidad en el que se encuentre. Al resto de elementos <span> de la página que no están dentro de un elemento p, no se les aplica la regla CSS anterior.</p>
+
+	    		<li><b>Selector de clase:</b> Para que el navegador no confunda este selector con los otros tipos de selectores, se prefija el valor del atributo class con un punto (.). Los selectores descendentes permiten aumentar la precisión del selector de tipo o etiqueta. En este ejemplo, todos los elementos HTML con class = "center" estarán rojos y alineados al centro:</li>
+	    		<code>
+			    .center {
+			      text-align: center;  
+			      color: red;
+			    }
+	    		</code>
+			    <li><b>Selectores de ID:</b> El selector de ID permite seleccionar un elemento de la página a través del valor de su atributo id. La siguiente regla CSS se aplicará al elemento HTML con id = "para1":</li>
+			    <code>
+			      #para1 { 
+			        text-align: center; 
+			        color: red;
+			      }
+			    </code>
+	      		</ul>
+	  		</article>
+		</section>
+
+	  	<section class="main-section" id="Referencias">
+	    	<header>Referencias</header>
+	  		<article>
+	        	<p> La información aqui presentada fue una recopilación de: <a href="https://www.w3schools.com/css/default.asp" target="_blank"> w3schools.com</a> , <a href="https://uniwebsidad.com/libros/css/capitulo-1" target="_blank">uniwebsidad.com</a> , <a href="https://openwebinars.net/blog/que-es-css3/" target="_blank">openwebinars.net</a>.</p>
+	    	</article>
+	  	</section>
+	</main>
+</body>
+</html>
